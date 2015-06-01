@@ -11,6 +11,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'newrelic_rpm'
 gem 'unicorn'
 gem 'rack-timeout'
+gem 'devise'
 #gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :production do
