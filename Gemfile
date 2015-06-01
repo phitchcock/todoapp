@@ -15,6 +15,7 @@ gem 'devise'
 gem 'loaderio'
 gem 'bootstrap-sass', '~> 3.3.4'
 gem "autoprefixer-rails"
+gem "font-awesome-rails"
 #gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :production do
