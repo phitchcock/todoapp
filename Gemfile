@@ -12,6 +12,7 @@ gem 'newrelic_rpm'
 gem 'unicorn'
 gem 'rack-timeout'
 gem 'devise'
+gem 'loaderio'
 #gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :production do
