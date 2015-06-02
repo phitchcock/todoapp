@@ -15,7 +15,7 @@ class TodosController < ApplicationController
   end
 
   def create
-    @todo = current_user.todos.build(todo_params)
+    @todo = Todo.new(todo_params)
     if @todo.save
       redirect_to root_path
     else
