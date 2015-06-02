@@ -26,6 +26,7 @@ end
 group :development do
   gem 'pry'
   gem 'pry-nav'
+  gem "letter_opener"
 end
 
 group :test do
