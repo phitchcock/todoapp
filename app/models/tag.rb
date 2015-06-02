@@ -1,3 +1,6 @@
 class Tag < ActiveRecord::Base
-  belongs_to :todo
+  has_many :todo_tags
+  has_many :todos, through: :todo_tags
+  
+  validates :title, presence: true
 end
