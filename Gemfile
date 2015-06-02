@@ -16,6 +16,7 @@ gem 'loaderio'
 gem 'bootstrap-sass', '~> 3.3.0'
 gem "autoprefixer-rails"
 gem "font-awesome-rails"
+gem 'delayed_job_active_record'
 #gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :production do
