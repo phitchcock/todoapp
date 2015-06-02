@@ -1,13 +1,11 @@
 class Api::V1::TodosController < ApplicationController
 
-  respond_to :json
-
   def index
-    respond_with Todo.all
+    @todos = Todo.all
   end
 
   def show
-    respond_with Todo.find(params[:id])
+    @todo = Todo.find(params[:id])
   end
 
 end

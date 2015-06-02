@@ -1,5 +1,6 @@
 class TodosController < ApplicationController
 
+  before_action :authenticate_user!, except: [:index, :show]
   before_action :set_todo, only: [:show, :edit, :update, :destroy]
 
   def index
@@ -14,7 +15,7 @@ class TodosController < ApplicationController
   end
 
   def create
-    @todo = Todo.new(todo_params)
+    @todo = current_user.todos.build(todo_params)
     if @todo.save
       redirect_to root_path
     else
