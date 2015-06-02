@@ -17,7 +17,7 @@ class TodosController < ApplicationController
   def create
     @todo = current_user.todos.build(todo_params)
     if @todo.save
-      AppMailer.delay.notify_on_new_todo(current_user, @todo)
+      AppMailer.notify_on_new_todo(current_user, @todo).deliver
       redirect_to root_path
     else
       render :new
